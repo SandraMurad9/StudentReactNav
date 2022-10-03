@@ -45,7 +45,7 @@ export function getStudents() {
     );
  }
     export function getRegStudent() {
-        return students.find(
+        return students.filter(
             (student) => student.operation === "Register"
           );
        
@@ -53,7 +53,7 @@ export function getStudents() {
   }
 
   export function getUnRegStudent() {
-    return students.find(
+    return students.filter(
         (student) => student.operation === "Unregister"
       );
    
